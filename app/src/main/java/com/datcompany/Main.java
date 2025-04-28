@@ -3,12 +3,12 @@
  */
 package com.datcompany;
 
-public class Main {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-    public static void main(String[] args) {
-        System.out.println(new  Main().getGreeting());
-    }
+@SpringBootApplication
+public class Main {
+  public static void main(String[] args) {
+    SpringApplication.run(Main.class, args);
+  }
 }
